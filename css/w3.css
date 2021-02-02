@@ -368,3 +368,9 @@ hr.dotted {
 }
 /*icon Abstand*/
 .iconclass{margin-right: 10px;}
+
+/*history background*/
+.history-background {
+  background-color: #e0e0e0;
+  background-image: url("https://www.transparenttextures.com/patterns/dark-wall.png");
+}
