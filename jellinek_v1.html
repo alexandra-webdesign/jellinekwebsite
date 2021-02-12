@@ -1,9 +1,15 @@
 <!DOCTYPE html>
+<!--sources used for this code:-->
+<!-- Client Logo Slider from https://codepen.io/mdashikar/pen/VWPvgE -->
+<!--Simple Carousel from https://codepen.io/dangvanthanh/pen/AgHnB-->
+
+
 <html>
   <title>Herrenmode Jellinek</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./css/w3.css">
+  <link rel="stylesheet" href="./css/carousel.css"> <!-- Sortimentslider -->
   <link rel="stylesheet" href="./css/fonts.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://kit.fontawesome.com/51408ba2de.js" crossorigin="anonymous"></script>
@@ -11,8 +17,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <script src="./res/carousel.js" type="text/javascript"></script>
-
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
 
 
   <style>
@@ -34,7 +40,7 @@
     }
 
     .w3-bar .w3-button {
-      padding: 16px;
+      font-size: 16px; padding: 16px;
     }
   </style>
 
@@ -50,10 +56,11 @@
         <!-- Right-sided navbar links -->
         <div class="w3-right w3-hide-small">
           <a href="#sortiment" class="w3-bar-item w3-button"><i class="fas fa-tshirt iconclass"></i>SORTIMENT</a>
-          <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i>TEAM</a>
-          <a href="#geschaeft" class="w3-bar-item w3-button"><i class="fa fa-th"></i> GESCHÄFT</a>
-          <a href="#aktuelles" class="w3-bar-item w3-button"><i class="fa fa-bell"></i> AKTUELLES</a>
-          <a href="#kontakt" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> KONTAKT</a>
+          <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user iconclass"></i>TEAM</a>
+          <a href="#geschichte" class="w3-bar-item w3-button"><i class="fa fa-align-center iconclass"></i>GESCHICHTE</a>
+          <a href="#geschaeft" class="w3-bar-item w3-button"><i class="fa fa-th iconclass"></i>GESCHÄFT</a>
+          <a href="#aktuelles" class="w3-bar-item w3-button"><i class="fa fa-bell iconclass"></i>AKTUELLES</a>
+          <a href="#kontakt" class="w3-bar-item w3-button"><i class="fa fa-envelope iconclass"></i>KONTAKT</a>
         </div>
         <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
@@ -65,21 +72,18 @@
 
     <!-- Sidebar on small screens when clicking the menu icon -->
     <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-      <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-      <a href="#sortment" onclick="w3_close()" class="w3-bar-item w3-button">SORTIMENT</a>
+      <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Schließen ×</a>
+      <a href="#sortiment" onclick="w3_close()" class="w3-bar-item w3-button">SORTIMENT</a>
       <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
-      <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
+      <a href="#geschaeft" onclick="w3_close()" class="w3-bar-item w3-button">GESCHÄFT</a>
       <a href="#aktuelles" onclick="w3_close()" class="w3-bar-item w3-button">AKTUELLES</a>
-      <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+      <a href="#kontakt" onclick="w3_close()" class="w3-bar-item w3-button">KONTAKT</a>
     </nav>
 
     <!-- Header with full-height image -->
     <header class="bgimg-1 w3-display-container w3-grayscale-minmin" id="home">
-      <div class="w3-display-left w3-text-white" style="padding:48px">
-        <span class="w3-jumbo w3-hide-small">Herrenmode Jellinek</span><br>
-        <span class="w3-xxlarge w3-hide-large w3-hide-medium">Herrenmode Jellinek</span><br>
-        <span class="w3-large">Ob zum Galadiner oder zum Snack, gekleidet in Mode von Jellinek.</span>
-        <p><a href="#sortiment" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Zu unserem Angebot.</a></p>
+      <div class="w3-display-bottommiddle w3-text-black" style="padding:48px">
+        <p><a href="#sortiment" class="w3-button w3-big w3-white roundedges w3-padding-xxlarge w3-margin-top w3-opacity w3-hover-opacity-off">Zu unserem Angebot.</a></p>
       </div>
       <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
         <i class="fa fa-facebook-official w3-hover-opacity"></i>
@@ -90,59 +94,188 @@
         <i class="fa fa-linkedin w3-hover-opacity"></i>
       </div>
     </header>
+    <!--<div class="w3-container w3-dark-grey w3-opacity" style="padding:24px 8px">
+      <h3 class="w3-center">AKTUELLES</h3>
+      <div class="w3-row-padding w3-center" style="margin-top:24px">
+        <div class="w3-col m6 w3-margin-bottom">
+
+          <!-<img class="w3-image w3-round-large" src="D://Geschaeft//website_neu//images/news2.png" alt="Business"
+          <p class="w3-big">Covid19</p>
+          <hr class="dotted">
+          </hr>
+          <p>Wir haben noch bis 15.2. geschlossen. Nach dem Lockdown sind wir gerne wieder für Sie da!</p>
+          <br>
+          <h7> Eintrag vom 30.1.2021 </h7>
+        </div>
+        <div class="w3-col m6 w3-margin-bottom box">
+
+          <!-<img class="w3-image w3-round-large" src="D://Geschaeft//website_neu//images/news2.png" alt="Freizeit">
+          <p class="w3-big">Willkomen auf unserer neuen Website!</p>
+          <hr class="dotted">
+          </hr>
+          <p>Auf unserer neuen Website möchten wir Ihnen tiefere Einblicke in unser Unternehmen erlauben. Außerdem ist unsere Seite nun auch für alle Geräte nutzbar - egal ob Smartphone, Tablet oder Laptop!</p>
+          <h7> Eintrag vom 30.1.2021 </h7>
+        </div>
+  </div>
+</div>-->
+
+    <!--<header class="bgimg-1 w3-display-container w3-grayscale-minmin" id="home">
+      <div class="w3-display-left w3-text-white">
+        <div class="w3-white w3-padding-large w3-large w3-opacity-min">
+        <span  style="padding:48px" class="w3-jumbo w3-hide-small">Herrenmode Jellinek</span><br>
+        <span  style="padding:48px" class="w3-xxlarge w3-hide-large w3-hide-medium">Herrenmode Jellinek</span><br>
+        <span  style="padding:48px" class="w3-large">Ob zum Galadiner oder zum Snack, gekleidet in Mode von Jellinek.</span>
+        </div>
+        <p><a href="#sortiment" style="margin-left:48px" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Zu unserem Angebot.</a></p>
+      </div>
+      <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+        <i class="fa fa-facebook-official w3-hover-opacity"></i>
+        <i class="fa fa-instagram w3-hover-opacity"></i>
+        <i class="fa fa-snapchat w3-hover-opacity"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+        <i class="fa fa-twitter w3-hover-opacity"></i>
+        <i class="fa fa-linkedin w3-hover-opacity"></i>
+      </div>
+    </header>
+    -->
 
     <!-- Sortiment Section -->
     <div class="w3-container" style="padding:128px 16px" id="sortiment">
       <h3 class="w3-center">UNSER AKTUELLES SORTIMENT</h3>
       <p class="w3-center w3-large">Winter 2020/2021.</p>
       <div class="w3-row-padding w3-center" style="margin-top:64px">
+          <div class="w3-col l3 m6 w3-margin-bottom">
+            <div class="containersoritment">
+              <div class="carousel">
+                <input type="radio" id="carousel-1" name="carousel[]" checked>
+                <input type="radio" id="carousel-2" name="carousel[]">
+                 <input type="radio" id="carousel-3" name="carousel[]">
+                <ul class="carousel__items">
+                  <li class="carousel__item"><img src="./images/business.jpg" alt="Business"></li>
+                  <li class="carousel__item"><img src="./images/business2.jpg" alt="Business"></li>
+                  <li class="carousel__item"><img src="./images/business3.jpg" alt="Business"></li>
+                </ul>
+                 <div class="carousel__prev">
+                  <label for="carousel-1"></label>
+                  <label for="carousel-2"></label>
+                  <label for="carousel-3"></label>
+                 </div>
+                 <div class="carousel__next">
+                   <label for="carousel-1"></label>
+                   <label for="carousel-2"></label>
+                   <label for="carousel-3"></label>
+                 </div>
+                 <div class="carousel__nav">
+                   <label for="carousel-1"></label>
+                   <label for="carousel-2"></label>
+                   <label for="carousel-3"></label>
+                 </div>
+               </div>
+             </div>
+            <p class="w3-large">Business</p>
+            <p class="w3-medium">Weiche Materialien und schmale Silhouetten prägen die Leichtigkeit der aktuellen Herbst-Wintermode. Wollstoffe und wollige Optiken in Karos, Pepita und Glencheck sind vorherrschend, sowohl als Sakko, vor allem aber auch als Gilets und
+              Westen. Pfiffige Strickteile und farbige Accessoires komplettieren das modische Outfit.</p>
+          </div>
+
+          <div class="w3-col l3 m6 w3-margin-bottom">
+            <div class="containersoritment">
+              <div class="carousel">
+                <input type="radio" id="carousel-4" name="carousel[]" checked>
+                <input type="radio" id="carousel-5" name="carousel[]">
+                 <input type="radio" id="carousel-6" name="carousel[]">
+
+                <ul class="carousel__items">
+                  <li class="carousel__item"><img src="./images/freizeit.jpg" alt="Freizeit"></li>
+                  <li class="carousel__item"><img src="./images/jacke.jpg" alt="Freizeit"></li>
+                  <li class="carousel__item"><img src="./images/tie.jpg" alt="Freizeit"></li>
+                </ul>
+                 <div class="carousel__prev">
+                  <label for="carousel-4"></label>
+                  <label for="carousel-5"></label>
+                  <label for="carousel-6"></label>
+                 </div>
+                 <div class="carousel__next">
+                   <label for="carousel-4"></label>
+                   <label for="carousel-5"></label>
+                   <label for="carousel-6"></label>
+                 </div>
+                 <div class="carousel__nav">
+                   <label for="carousel-4"></label>
+                   <label for="carousel-5"></label>
+                   <label for="carousel-6"></label>
+                 </div>
+               </div>
+             </div>
+            <p class="w3-large">Freizeit</p>
+            <p class="w3-medium">Flauschige Strickmodelle, mit großen Krägen oder auch Kapuzen, kuschelige Hemden und weiche Stretchhosen verbinden sich mit technischen Materialen und funktionalen Elementen zu bequemer Freizeitbekleidung. Erdige Farben herrschen vor,
+              werden aber durch kräftige Rot-, Orange- und Gelbtöne aufgepeppt. Materialien, Muster und Farben dürfen nach Lust und Laune gemixt werden..</p>
+          </div>
+
         <div class="w3-col l3 m6 w3-margin-bottom">
-          <img class="w3-image w3-round-large" src="./images/business.jpg" alt="Business">
-          <p class="w3-large">Business</p>
-          <p>Weiche Materialien und schmale Silhouetten prägen die Leichtigkeit der aktuellen Herbst-Wintermode. Wollstoffe und wollige Optiken in Karos, Pepita und Glencheck sind vorherrschend, sowohl als Sakko, vor allem aber auch als Gilets und
-            Westen. Pfiffige Strickteile und farbige Accessoires komplettieren das modische Outfit.</p>
-        </div>
-        <div class="w3-col l3 m6 w3-margin-bottom">
-          <img class="w3-image w3-round-large" src="./images/freizeit.jpg" alt="Freizeit">
-          <p class="w3-large">Freizeit</p>
-          <p>Flauschige Strickmodelle, mit großen Krägen oder auch Kapuzen, kuschelige Hemden und weiche Stretchhosen verbinden sich mit technischen Materialen und funktionalen Elementen zu bequemer Freizeitbekleidung. Erdige Farben herrschen vor,
-            werden aber durch kräftige Rot-, Orange- und Gelbtöne aufgepeppt. Materialien, Muster und Farben dürfen nach Lust und Laune gemixt werden..</p>
-        </div>
-        <div class="w3-col l3 m6 w3-margin-bottom">
-          <img class="w3-image w3-round-large" src="./images/jacke.jpg" alt="Outdoor">
+          <div class="containersoritment">
+            <div class="carousel">
+              <input type="radio" id="carousel-7" name="carousel[]" checked>
+              <input type="radio" id="carousel-8" name="carousel[]">
+               <input type="radio" id="carousel-9" name="carousel[]">
+              <ul class="carousel__items">
+                <li class="carousel__item"><img src="./images/jacke.jpg" alt="Outdoor"></li>
+                <li class="carousel__item"><img src="./images/waesche.jpg" alt="Outdoor"></li>
+                <li class="carousel__item"><img src="./images/gutschein.jpg" alt="Outdoor"></li>
+              </ul>
+               <div class="carousel__prev">
+                <label for="carousel-7"></label>
+                <label for="carousel-8"></label>
+                <label for="carousel-9"></label>
+               </div>
+               <div class="carousel__next">
+                 <label for="carousel-7"></label>
+                 <label for="carousel-8"></label>
+                 <label for="carousel-9"></label>
+               </div>
+               <div class="carousel__nav">
+                 <label for="carousel-7"></label>
+                 <label for="carousel-8"></label>
+                 <label for="carousel-9"></label>
+               </div>
+             </div>
+           </div>
           <p class="w3-large">Outdoor</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+          <p class="w3-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
         </div>
         <div class="w3-col l3 m6 w3-margin-bottom">
           <img class="w3-image w3-round-large" src="./images/festlich.jpg" alt="Festlich">
           <p class="w3-large">Festlich</p>
-          <p>Stilvoll Feiern - egal ob Sie Bräutigam sind, Best Man oder Gast, ob Anzug, Smoking, Dinner-Jacket, Cut oder Frack: Sie sind nicht Standard, Ihr Anzug sollte es auch nicht sein. Es sind die Details, die ein festliches Outfit von einem
+          <p class="w3-medium">Stilvoll Feiern - egal ob Sie Bräutigam sind, Best Man oder Gast, ob Anzug, Smoking, Dinner-Jacket, Cut oder Frack: Sie sind nicht Standard, Ihr Anzug sollte es auch nicht sein. Es sind die Details, die ein festliches Outfit von einem
             normalen Büroanzug unterscheiden. Die Stoffe sind edel, fließend und weich im Griff, die Modelle geprägt durch elegante Ausstattung und bewusst gesetzte Akzente, farblich perfekt abgestimmt und beweisen viel Liebe zum Detail.</p>
         </div>
         <div class="w3-col l3 m6 w3-margin-bottom">
           <img class="w3-image w3-round-large" src="./images/isa_Lounge.jpg" alt="Loungewear">
           <p class="w3-large">Loungewear</p>
-          <p>Bequeme Kleidung für Zuhause erhöht den Wohlfühlfaktor im Homeoffice, aber auch bei einem gemütlichen Sonntagsfrühstück! Bei uns finden Sie Trainings- und Hausanzüge, die sowohl durch ihr angenehmes Material als auch durch ihr modisches
+          <p class="w3-medium">Bequeme Kleidung für Zuhause erhöht den Wohlfühlfaktor im Homeoffice, aber auch bei einem gemütlichen Sonntagsfrühstück! Bei uns finden Sie Trainings- und Hausanzüge, die sowohl durch ihr angenehmes Material als auch durch ihr modisches
             Aussehen punkten.</p>
         </div>
         <div class="w3-col l3 m6 w3-margin-bottom">
           <img class="w3-image w3-round-large" src="./images/waesche.jpg" alt="Wäsche">
           <p class="w3-large">Wäsche</p>
-          <p>Qualitative und bequeme Wäsche bildet die Basis jedes Outfits. Daher bieten wir Ihnen eine Vielfalt an Pyjamas, Socken, Unterhosen und -hemden. </p>
+          <p class="w3-medium">Qualitative und bequeme Wäsche bildet die Basis jedes Outfits. Daher bieten wir Ihnen eine Vielfalt an Pyjamas, Socken, Unterhosen und -hemden. </p>
         </div>
         <div class="w3-col l3 m6 w3-margin-bottom">
           <img class="w3-image w3-round-large" src="./images/tie.jpg" alt="Accessoires">
           <p class="w3-large">Accessoires</p>
-          <p>Egal ob aus praktischen oder ästethischen Gründen - Accessoires machen ein Outfit erst komplett. Klicken sie sich hier durch unser breites Angebot an modischen Accessoires.</p>
+          <p class="w3-medium">Egal ob aus praktischen oder ästethischen Gründen - Accessoires machen ein Outfit erst komplett. Klicken sie sich hier durch unser breites Angebot an modischen Accessoires.</p>
         </div>
         <div class="w3-col l3 m6 w3-margin-bottom">
           <img class="w3-image w3-round-large" src="./images/gutschein.jpg" alt="Gutscheine">
           <p class="w3-large">Gutscheine</p>
-          <p>Ein Gutschein von Herrenmode Jellinek ist immer ein schönes Geschenk. Ganz nach Ihren Wünschen bestimmen Sie den Betrag. Gutscheine können Sie direkt in unserem Geschäft kaufen. Nach Vereinbarung bieten wir auch Postversand
+          <p class="w3-medium">Ein Gutschein von Herrenmode Jellinek ist immer ein schönes Geschenk. Ganz nach Ihren Wünschen bestimmen Sie den Betrag. Gutscheine können Sie direkt in unserem Geschäft kaufen. Nach Vereinbarung bieten wir auch Postversand
             an.Kontaktieren
             Sie uns dafür bitte per E-Mail.</p>
         </div>
       </div>
+
+
+
+
 
 
       <div class="container" style="padding:64px 8px">
@@ -196,8 +329,8 @@
             <img src="./images/alex.png" alt="John" style="width:100%">
             <div class="w3-container">
               <h3>Richard Jellinek</h3>
-              <p class="w3-opacity">Geschäftsführer</p>
-              <p>"Mode ist toll blabla Leidenschaft für Design und Trends."</p>
+              <p class="w3-opacity-min">Geschäftsführer</p>
+              <p class="w3-medium">"Mode ist toll blabla Leidenschaft für Design und Trends."</p>
             </div>
           </div>
         </div>
@@ -206,8 +339,8 @@
             <img src="./images/alex.png" alt="Jane" style="width:100%">
             <div class="w3-container">
               <h3>Birgitt Jellinek</h3>
-              <p class="w3-opacity">Geschäftsführerin</p>
-              <p>"Blabal bladkfjs dfashdfwoerjlskd sdhfksdjf sliefhensld."</p>
+              <p class="w3-opacity-min">Geschäftsführerin</p>
+              <p class="w3-medium">"Blabal bladkfjs dfashdfwoerjlskd sdhfksdjf sliefhensld."</p>
             </div>
           </div>
         </div>
@@ -216,8 +349,8 @@
             <img src="./images/alex.png" alt="Mike" style="width:100%">
             <div class="w3-container">
               <h3>Lukas</h3>
-              <p class="w3-opacity">Web Designer</p>
-              <p>Lehrling zum Handelskaufmann</p>
+              <p class="w3-opacity-min">Lehrling</p>
+              <p class="w3-medium">Lehrling zum Handelskaufmann</p>
             </div>
           </div>
         </div>
@@ -233,23 +366,24 @@
     </div>
 
     <!-- Geschichte Section "Statistics" -->
-    <div class="w3-container w3-row w3-center history-background" style="padding:128px 16px">   <!-- deleted: w3-dark-grey, added history-background -->
-      <h3 class="w3-center">Unsere GESCHICHTE in Zahlen</h3>
+    <div class="w3-container w3-row w3-center history-background" style="padding:128px 16px" id="geschichte">   <!-- deleted: w3-dark-grey, added history-background -->
+      <h3 class="w3-center">UNSERE GESCHICHTE</h3>
+      <p class="w3-center w3-large">... in 4 Zahlen. Wenn Sie mehr lesen möchten, klicken Sie hier.</p>
       <div class="w3-quarter" style="margin-top:64px">
         <span class="w3-xxlarge">1886</span>
-        <br>Gründung durch Großvater Johann Jellinek.
+        <br><p class="w3-large">Gründung durch Großvater Johann Jellinek.</p>
       </div>
       <div class="w3-quarter" style="margin-top:64px">
         <span class="w3-xxlarge">1930</span>
-        <br>Übersiedelung aus Neusiedlerstraße an heutigen Standort.
+        <br><p class="w3-large">Übersiedelung aus Neusiedlerstraße an heutigen Standort.</p>
       </div>
       <div class="w3-quarter" style="margin-top:64px">
         <span class="w3-xxlarge">1978</span>
-        <br>Richard Jellinek übernimmt Geschäftsführung.
+        <br><p class="w3-large">Richard Jellinek übernimmt Geschäftsführung.</p>
       </div>
       <div class="w3-quarter" style="margin-top:64px">
         <span class="w3-xxlarge">2010</span>
-        <br>Renovierung und Ausbau des Geschäftslokales.
+        <br><p class="w3-large">Renovierung und Ausbau des Geschäftslokales.</p>
       </div>
     </div>
 
@@ -308,7 +442,7 @@
           <p class="w3-big">Covid19</p>
           <hr class="dotted">
           </hr>
-          <p>Wir haben noch bis 15.2. geschlossen. Nach dem Lockdown sind wir gerne wieder für Sie da!</p>
+          <p class="w3-large">Wir haben noch bis 15.2. geschlossen. Nach dem Lockdown sind wir gerne wieder für Sie da! Bitte tragen Sie eine FFP2-Maske.</p>
           <br>
           <h7> Eintrag vom 30.1.2021 </h7>
         </div>
@@ -318,7 +452,7 @@
           <p class="w3-big">Willkomen auf unserer neuen Website!</p>
           <hr class="dotted">
           </hr>
-          <p>Auf unserer neuen Website möchten wir Ihnen tiefere Einblicke in unser Unternehmen erlauben. Außerdem ist unsere Seite nun auch für alle Geräte nutzbar - egal ob Smartphone, Tablet oder Laptop!</p>
+          <p class="w3-large">Auf unserer neuen Website möchten wir Ihnen tiefere Einblicke in unser Unternehmen erlauben. Außerdem ist unsere Seite nun auch für alle Geräte nutzbar - egal ob Smartphone, Tablet oder Laptop!</p>
           <h7> Eintrag vom 30.1.2021 </h7>
         </div>
 
@@ -433,14 +567,58 @@
       <!--Das Padding funkt iwie nicht -->
       <h3 class="w3-center">KONTAKT</h3>
       <p class="w3-center w3-large">Kommen Sie vorbei. Rufen Sie uns an. Oder schreiben Sie uns eine E-Mail. Wir freuen uns auf Sie! </p>
-      <div class="w3-row-padding w3-center" style="margin-top:64px">
+      <div class="w3-row-padding w3-center" style="padding:10%">
         <div class="w3-col l6 m6 w3-margin-bottom">
-          <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Kaiserin Elisabethstraße 13, 2340 Mödling</p>
-          <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> 02236 47968 - 0677 63824085</p>
-          <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> office@herrenmode-jellinek.at</p>
-        </div>
+    <!--Adresse-->
+          <table width="80%" cellspacing="50">
+            <tr>
+              <td colspan="2" style="text-align: left;" width="100%">
+                <p class="w3-big"> Kontakt </p>
+              </td>
+            </tr>
+            <tr> <!-- Abstandhalter-->
+              <td colspan="2" style="text-align: left;" width="100%">
+                <p class="w3-big"></p>
+              </td>
+            </tr>
+            <tr>
+              <td style="text-align: left;" width="5%">
+                <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i></p>
+              </td>
+              <td style="text-align: left;" width="95%">
+                <a class="w3-medium" href="map:Kaiserin Elisabethstraße 13, 2340 Mödling">Kaiserin Elisabethstraße 13, 2340 Mödling</a>
+              </td>
+            </tr>
+            <tr>
+              <td style="text-align: left;">
+                <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i></p>
+              </td>
+              <td style="text-align: left;">
+                 <a class="w3-medium" href="tel:+43223647968">02236 47968</a>
+              </td>
+            </tr>
+            <tr>
+              <td style="text-align: left;">
+                <p><i class="fa fa-mobile fa-fw w3-xxlarge w3-margin-right"></i></p>
+              </td>
+              <td style="text-align: left;">
+                 <a class="w3-medium" href="tel:+4367763824085">0677 63824085</a>
+              </td>
+            </tr>
+            <tr>
+              <td style="text-align: left;">
+                <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i></p>
+              </td>
+              <td style="text-align: left;">
+                <a class="w3-medium" href="mailto:office@herrenmode-jellinek.at">office@herrenmode-jellinek.at</a>
+              </td>
+            </tr>
+          </table>
+      </div>
+
+
         <div class="w3-col l6 m6 w3-margin-bottom">
-          <div id="googleMap" style="width:100%;height:400px;"></div>
+          <div id="googleMap" style="width:100%;height:228px;"></div>
 
           <script>
             function myMap() {
@@ -457,11 +635,146 @@
     <img src="/w3images/map.jpg" class="w3-image w3-greyscale" style="width:100%;margin-top:48px">-->
         </div>
       </div>
+      <br>
+      <br>
+      <div>
+          <!--Öffnungszeiten-->
+          <p class="w3-big" style="text-align:center">Öffnungszeiten</p>
+          <hr class="dotted">
+          <br>
+          <div class="w3-row-padding w3-center">
+            <div class="w3-col l4 m2 s0 w3-margin-bottom">
+            </div>
+            <div class="w3-col l4 m8 s12 w3-margin-bottom">
+                <center>
+                <table cellspacing="5">
+                  <!--<tr>
+                    <td colspan="4" style="text-align: left;" width="100%">
+                      <p class="w3-big"> Öffnungszeiten </p>
+                    </td>
+                  </tr>
+                  <tr> <!-Abstandhalter->
+                    <td colspan="4" style="text-align: left;" width="100%">
+                      <p class="w3-big"></p>
+                    </td>
+                  </tr>-->
+                  <tr>
+                    <td style="text-align: left;" width="5%">
+                      <i class="fa fa-clock-o fa-fw w3-xxlarge w3-margin-right"></i>
+                    </td>
+                    <td style="text-align: left;" width="37%">
+                      <p class="w3-medium"> Montag</p>
+                    </td>
+                    <td style="text-align: left;" width="29%">
+                      <p class="w3-medium">8:00 bis 12:00</p>
+                    </td>
+                    <td style="text-align: left;" width="29%">
+                      <p class="w3-medium">14:30 bis 18:00</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left;">
+                      <p><i></i></p>
+                    </td>
+                    <td style="text-align: left;">
+                      <p class="w3-medium"> Dienstag</p>
+                    </td>
+                    <td style="text-align: left;">
+                      <p class="w3-medium">8:00 bis 12:00</p>
+                    </td>
+                    <td style="text-align: left;">
+                      <p class="w3-medium">14:30 bis 18:00</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left;">
+                      <p><i></i></p>
+                    </td>
+                    <td style="text-align: left;">
+                      <p class="w3-medium"> Mittwoch</p>
+                    </td>
+                    <td style="text-align: left;">
+                      <p class="w3-medium">8:00 bis 12:00</p>
+                    </td>
+                    <td style="text-align: left;">
+                      <p class="w3-medium">14:30 bis 18:00</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left;">
+                      <p><i></i></p>
+                    </td>
+                    <td style="text-align: left;">
+                      <p class="w3-medium"> Donnerstag</p>
+                    </td>
+                    <td style="text-align: left;">
+                      <p class="w3-medium">8:00 bis 12:00</p>
+                    </td>
+                    <td style="text-align: left;">
+                      <p class="w3-medium">14:30 bis 18:00</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left;">
+                      <p><i></i></p>
+                    </td>
+                    <td style="text-align: left;">
+                      <p class="w3-medium"> Freitag</p>
+                    </td>
+                    <td style="text-align: left;">
+                      <p class="w3-medium">8:00 bis 12:00</p>
+                    </td>
+                    <td style="text-align: left;">
+                      <p class="w3-medium">14:30 bis 18:00</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left;">
+                      <p><i></i></p>
+                    </td>
+                    <td style="text-align: left;">
+                      <p class="w3-medium"> Samstag</p>
+                    </td>
+                    <td style="text-align: left;">
+                      <p class="w3-medium">8:00 bis 12:30</p>
+                    </td>
+                    <td style="text-align: left;">
+                      <p class="w3-medium">Geschlossen</p>
+                    </td>
+                  </tr>
+                </table>
+              </center>
+            </div>
+            <div class="w3-col l4 m2 s0 w3-margin-bottom">
+            </div>
+          </div>
+            <br>
+            <div class="w3-row-padding w3-center">
+              <div class="w3-col l4 m2 s0 w3-margin-bottom">
+              </div>
+              <div class="w3-col l4 m8 s12 w3-margin-bottom">
+                <center>
+                  <table>
+                  <tr>
+                    <td style="text-align: left;">
+                      <i class="fa fa-plus fa-fw w3-xxlarge w3-margin-right" width="5%"></i>
+                    </td>
+                    <td style="text-align: left;" width="95%">
+                      <p class="w3-medium"> Jeden ersten Samstag im Monat von 8:00 bis 17:00 Uhr.</p>
+                    </td>
+                  </tr>
+                </table>
+            </center>
+        </div>
+        <div class="w3-col l4 m2 s0 w3-margin-bottom">
+        </div>
     </div>
+  </div>
+</div>
 
     <!-- Footer -->
     <footer class="w3-center w3-black w3-padding-64">
-      <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Nach oben</a>
+      <a href="#home" class="w3-button roundedges w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Nach oben</a>
       <div class="w3-xlarge w3-section">
         <i class="fa fa-facebook-official w3-hover-opacity"></i>
         <i class="fa fa-instagram w3-hover-opacity"></i>
