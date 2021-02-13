@@ -52,7 +52,7 @@
     <!-- Navbar (sit on top) -->
     <div class="w3-top">
       <div class="w3-bar w3-white w3-card" id="myNavbar">
-        <a href="#home" class="w3-bar-item w3-button w3-wide"><img class="w3-logo w3-round-small" src="./images/logo.png" alt="Logo"></a>
+        <a href="#home" class="w3-logo-item"><img class="w3-logo w3-round-small" src="./images/logolang.jpg" alt="Logo"></a>
         <!-- Right-sided navbar links -->
         <div class="w3-right w3-hide-small">
           <a href="#sortiment" class="w3-bar-item w3-button"><i class="fas fa-tshirt iconclass"></i>SORTIMENT</a>
@@ -75,6 +75,7 @@
       <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Schließen ×</a>
       <a href="#sortiment" onclick="w3_close()" class="w3-bar-item w3-button">SORTIMENT</a>
       <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+      <a href="#geschichte" onclick="w3_close()" class="w3-bar-item w3-button">GESCHICHTE</a>
       <a href="#geschaeft" onclick="w3_close()" class="w3-bar-item w3-button">GESCHÄFT</a>
       <a href="#aktuelles" onclick="w3_close()" class="w3-bar-item w3-button">AKTUELLES</a>
       <a href="#kontakt" onclick="w3_close()" class="w3-bar-item w3-button">KONTAKT</a>
@@ -83,15 +84,15 @@
     <!-- Header with full-height image -->
     <header class="bgimg-1 w3-display-container w3-grayscale-minmin" id="home">
       <div class="w3-display-bottommiddle w3-text-black" style="padding:48px">
-        <p><a href="#sortiment" class="w3-button w3-big w3-white roundedges w3-padding-xxlarge w3-margin-top w3-opacity w3-hover-opacity-off">Zu unserem Angebot.</a></p>
+        <p><a href="#aktuelles" class="w3-button w3-big w3-white roundedges w3-padding-xxlarge w3-margin-top w3-opacity w3-hover-opacity-off">Zu den aktuellen Corona-News.</a></p>
       </div>
-      <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
-        <i class="fa fa-facebook-official w3-hover-opacity"></i>
-        <i class="fa fa-instagram w3-hover-opacity"></i>
+      <div class="w3-display-bottomleft w3-text-grey w3-big" style="padding:12px 24px">
+        <a href="https://www.instagram.com/herrenmode_jellinek/" target="_blank"><i class="fa fa-instagram fa-2x w3-hover-opacity w3-hover-text-grey w3-text-black"></i></a>
+      <!--<i class="fa fa-facebook-official w3-hover-opacity"></i>
         <i class="fa fa-snapchat w3-hover-opacity"></i>
         <i class="fa fa-pinterest-p w3-hover-opacity"></i>
         <i class="fa fa-twitter w3-hover-opacity"></i>
-        <i class="fa fa-linkedin w3-hover-opacity"></i>
+        <i class="fa fa-linkedin w3-hover-opacity"></i>-->
       </div>
     </header>
     <!--<div class="w3-container w3-dark-grey w3-opacity" style="padding:24px 8px">
@@ -286,7 +287,7 @@
           <div class="slide"><img src="./images\carlgross1.png"></div>
           <div class="slide"><img src="./images/CG.png"></div>
           <div class="slide"><img src="./images/hajo.jpg"></div>
-          <div class="slide"><img src="./images/happysocks1.png"></div>
+          <div class="slide"><img src="./images/fynchhatton.png"></div>
           <div class="slide"><img src="./images/isa.png"></div>
           <div class="slide"><img src="./images/jploenes.png"></div>
           <div class="slide"><img src="./images/seidensticker1.png"></div>
@@ -436,7 +437,7 @@
       <h3 class="w3-center">AKTUELLES</h3>
       <p class="w3-center w3-large">Hier finden Sie News und andere wichtige Informationen.</p>
       <div class="w3-row-padding w3-center" style="margin-top:64px">
-        <div class="w3-col m6 w3-margin-bottom">
+        <div class="w3-col m6 w3-margin-bottom box" style="padding: 0 3%">
 
           <!--<img class="w3-image w3-round-large" src="D://Geschaeft//website_neu//images/news2.png" alt="Business">-->
           <p class="w3-big">Covid19</p>
@@ -446,8 +447,9 @@
           <br>
           <h7> Eintrag vom 30.1.2021 </h7>
         </div>
-        <div class="w3-col m6 w3-margin-bottom box">
 
+
+        <div class="w3-col m6 w3-margin-bottom box" style="padding: 0 3%">
           <!--<img class="w3-image w3-round-large" src="D://Geschaeft//website_neu//images/news2.png" alt="Freizeit">-->
           <p class="w3-big">Willkomen auf unserer neuen Website!</p>
           <hr class="dotted">
@@ -562,13 +564,15 @@
   </div>
 </div>-->
 
-    <!-- Contact Section -->
+
+
+<!-- Contact Section -->
     <div class="w3-container" style="padding:128px 16px" id="kontakt">
       <!--Das Padding funkt iwie nicht -->
       <h3 class="w3-center">KONTAKT</h3>
       <p class="w3-center w3-large">Kommen Sie vorbei. Rufen Sie uns an. Oder schreiben Sie uns eine E-Mail. Wir freuen uns auf Sie! </p>
-      <div class="w3-row-padding w3-center" style="padding:10%">
-        <div class="w3-col l6 m6 w3-margin-bottom">
+      <div class="w3-margin-left-big w3-margin-right-big w3-margin-top w3-margin-bottom">
+        <div class="w3-col l6 m6">
     <!--Adresse-->
           <table width="80%" cellspacing="50">
             <tr>
@@ -617,8 +621,9 @@
       </div>
 
 
-        <div class="w3-col l6 m6 w3-margin-bottom">
-          <div id="googleMap" style="width:100%;height:228px;"></div>
+        <div class="w3-col l6 m6">
+          <div id="googleMap" style="width:100%;height:268px;">
+          </div>
 
           <script>
             function myMap() {
@@ -629,20 +634,19 @@
               var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
             }
           </script>
-          <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+          <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap">
+          </script>
 
           <!-- Image of location/map
     <img src="/w3images/map.jpg" class="w3-image w3-greyscale" style="width:100%;margin-top:48px">-->
         </div>
-      </div>
-      <br>
-      <br>
-      <div>
+  </div>
+  <div class="w3-margin-top">
           <!--Öffnungszeiten-->
           <p class="w3-big" style="text-align:center">Öffnungszeiten</p>
           <hr class="dotted">
           <br>
-          <div class="w3-row-padding w3-center">
+          <div class="w3-center">
             <div class="w3-col l4 m2 s0 w3-margin-bottom">
             </div>
             <div class="w3-col l4 m8 s12 w3-margin-bottom">
@@ -773,17 +777,17 @@
 </div>
 
     <!-- Footer -->
-    <footer class="w3-center w3-black w3-padding-64">
-      <a href="#home" class="w3-button roundedges w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Nach oben</a>
-      <div class="w3-xlarge w3-section">
-        <i class="fa fa-facebook-official w3-hover-opacity"></i>
-        <i class="fa fa-instagram w3-hover-opacity"></i>
+    <footer class="w3-center w3-black w3-padding-48">
+      <a href="#home" class="w3-button roundedges w3-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Nach oben</a>
+      <div class="w3-section">
+        <!--<i class="fa fa-facebook-official w3-hover-opacity"></i>-->
+        <a href="https://www.instagram.com/herrenmode_jellinek/" target="_blank"><i class="fa fa-instagram fa-2x w3-hover-text-grey w3-text-white w3-hover-opacity verticalmittig"></i></a>
         <!--<i class="fa fa-snapchat w3-hover-opacity"></i>
     <i class="fa fa-pinterest-p w3-hover-opacity"></i>
     <i class="fa fa-twitter w3-hover-opacity"></i>
     <i class="fa fa-linkedin w3-hover-opacity"></i>-->
       </div>
-      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+      <p>Website von Röcklinger und <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-grey w3-text-white">w3.css</a></p>
     </footer>
 
     <script>
