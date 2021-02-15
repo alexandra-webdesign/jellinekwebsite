@@ -238,7 +238,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-border-pale-yellow,.w3-hover-border-pale-yellow:hover{border-color:#ffffcc!important}.w3-border-pale-blue,.w3-hover-border-pale-blue:hover{border-color:#e7ffff!important}
 /* selbstgemacht */
 .center{display: block; margin-left: auto; margin-right: auto; width: 50%;}
-/* carousel *//* Slider */
+/* LOGOSLIDER *//* Slider */
 
 .slick-slide {
     margin: 0px 20px;
@@ -386,4 +386,23 @@ hr.dotted {
 /*abgerundete ecken*/
 .roundedges{
     border-radius:8px;
+}
+
+/*header monitor version*/
+.header-big {
+  display:block;
+}
+
+/*header smartphone version*/
+.header-small {
+  display:none;
+}
+
+@media only screen (max-width: 896px) and (orientation: portrait){
+  .header-small {
+    display: block;
+  }
+  .header-big {
+    display: none;
+  }
 }
