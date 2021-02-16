@@ -397,6 +397,14 @@ hr.dotted {
 .header-small {
   display:none;
 }
+.logo-small-screen {
+  display: none;
+}
+
+.schaufenster-small-screen {
+  display: none;
+}
+
 
 @media only screen and (max-width: 896px) and (orientation: portrait){
   .header-small {
@@ -404,5 +412,27 @@ hr.dotted {
   }
   .header-big {
     display: none;
+  }
+
+  .logo-large-screen {
+    display: none;
+  }
+  .logo-small-screen {
+    display: block;
+  }
+
+  .news-date-bottom-margin {
+    padding-bottom: 6rem!important;
+  }
+
+  .schaufenster-small-screen {
+    display: block;
+  }
+  .schaufenster-large-screen {
+    display: none;
+  }
+
+  .margin-top-small-screen {
+    margin-top: 3rem;
   }
 }
