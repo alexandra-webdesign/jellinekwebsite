@@ -405,6 +405,19 @@ hr.dotted {
   display: none;
 }
 
+.home-button-on-small-device {
+  display: none;
+  border: none;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  background-color: inherit;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
 
 @media only screen and (max-width: 896px) and (orientation: portrait){
   .header-small {
@@ -434,5 +447,12 @@ hr.dotted {
 
   .margin-top-small-screen {
     margin-top: 3rem;
+  }
+
+  .home-button-on-small-device {
+    display: inline-block;
+  }
+  .home-button-on-large-device {
+    display: none;
   }
 }
