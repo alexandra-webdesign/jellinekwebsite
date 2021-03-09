@@ -2,6 +2,7 @@
 <!--sources used for this code:-->
 <!-- Client Logo Slider from https://codepen.io/mdashikar/pen/VWPvgE -->
 <!--Simple Carousel from https://codepen.io/dangvanthanh/pen/AgHnB-->
+<!--and w3schools, link in website footer -->
 
 
 <html>
@@ -18,6 +19,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
   <script src="./res/carousel.js" type="text/javascript"></script> <!-- Logoslider -->
+  <link rel="icon" href="./images/favicon.png" type="image/png" sizes="16x16">
 
   <style>
     body, h1, h2, h3, h4, h5, h6 {
@@ -64,7 +66,7 @@
           <a href="#aktuelles" class="w3-bar-item w3-button"><i class="fa fa-bell iconclass"></i>AKTUELLES</a>
           <a href="#sortiment" class="w3-bar-item w3-button"><i class="fas fa-tshirt iconclass"></i>SORTIMENT</a>
           <a href="#geschaeft" class="w3-bar-item w3-button"><i class="fa fa-th iconclass"></i>GESCHÄFT</a>
-          <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user iconclass"></i>TEAM</a>
+          <!--<a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user iconclass"></i>TEAM</a>-->
           <a href="#geschichte" class="w3-bar-item w3-button"><i class="fa fa-align-center iconclass"></i>GESCHICHTE</a>
           <a href="#kontakt" class="w3-bar-item w3-button"><i class="fa fa-envelope iconclass"></i>KONTAKT</a>
         </div>
@@ -82,7 +84,7 @@
       <a href="#aktuelles" onclick="w3_close()" class="w3-bar-item w3-button">AKTUELLES</a>
       <a href="#sortiment" onclick="w3_close()" class="w3-bar-item w3-button">SORTIMENT</a>
       <a href="#geschaeft" onclick="w3_close()" class="w3-bar-item w3-button">GESCHÄFT</a>
-      <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+      <!--<a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>-->
       <a href="#geschichte" onclick="w3_close()" class="w3-bar-item w3-button">GESCHICHTE</a>
       <a href="#kontakt" onclick="w3_close()" class="w3-bar-item w3-button">KONTAKT</a>
     </nav>
@@ -105,7 +107,7 @@
     <!-- Header for lower-width devices -->
     <header class="bgimg-2 w3-display-container w3-grayscale-minmin header-small" id="home-small-device">
       <div class="w3-display-bottommiddle w3-text-black">
-        <p><a href="#kontakt" class="w3-button w3-big w3-white roundedges w3-padding-xxlarge w3-margin-top w3-opacity w3-hover-opacity-off">Zu den Öffnungszeiten.</a></p>
+        <p><a href="#oeffnungszeiten" class="w3-button w3-big w3-white roundedges w3-padding-xxlarge w3-margin-top w3-opacity w3-hover-opacity-off">Zu den Öffnungszeiten.</a></p>
       </div>
       <!-- instagram icon
       <div class="w3-display-bottomleft w3-text-grey w3-big" style="padding:12px 24px">
@@ -174,17 +176,17 @@
 <!-- Aktuelles-->
     <div class="w3-container w3-light-grey" style="padding:128px 16px" id="aktuelles">
       <h3 class="w3-center">AKTUELLES</h3>
-      <p class="w3-center w3-large">Hier finden Sie News und andere wichtige Informationen.</p>
+      <p class="w3-center w3-large">Wir freuen uns, Sie wieder persönlich in unserem Geschäft begrüßen zu können.</p>
       <div class="w3-row-padding w3-center" style="margin-top:64px">
         <div class="w3-col m6 w3-margin-bottom box news-date-bottom-margin" style="padding: 0 3%">
 
           <!--<img class="w3-image w3-round-large" src="D://Geschaeft//website_neu//images/news2.png" alt="Business">-->
-          <p class="w3-big">Covid19</p>
+          <p class="w3-big">Winterschlussverkauf</p>
           <hr class="dotted">
           </hr>
-          <p class="w3-large">Wir haben noch bis 15.2. geschlossen. Nach dem Lockdown sind wir gerne wieder für Sie da! Bitte tragen Sie eine FFP2-Maske.</p>
+          <p class="w3-large">Gehen Sie auf Schnäppchenjagd - viele Winterteile sind jetzt um 30-50% reduziert.</p>
           <br>
-          <h7> Eintrag vom 30.1.2021 </h7>
+          <h7> Eintrag vom 03.03.2021 </h7>
         </div>
 
 
@@ -193,8 +195,8 @@
           <p class="w3-big">Willkomen auf unserer neuen Website!</p>
           <hr class="dotted">
           </hr>
-          <p class="w3-large">Auf unserer neuen Website möchten wir Ihnen tiefere Einblicke in unser Unternehmen erlauben. Außerdem ist unsere Seite nun auch für alle Geräte nutzbar - egal ob Smartphone, Tablet oder Laptop!</p>
-          <h7> Eintrag vom 30.1.2021 </h7>
+          <p class="w3-large">Auf unserer neuen Website möchten wir Ihnen tiefere Einblicke in unser Unternehmen geben. Außerdem ist die Seite nun auch auf allen Geräten nutzbar - egal ob Smartphone, Tablet oder Laptop!</p>
+          <h7> Eintrag vom 03.03.2021 </h7>
         </div>
 
 
@@ -230,14 +232,14 @@
                   <!-- Wrapper for slides -->
                   <div class="carousel-inner">
                     <div class="item active">
-                      <img class="roundedges" src="./images/freizeit_5.jpg" alt="Freizeit" style="width:100%;">
+                      <img class="roundedges" src="./images/freizeit_4.jpg" alt="Freizeit" style="width:100%;">
                     </div>
 
                     <div class="item">
-                      <img class="roundedges" src="./images/freizeit_4.jpg" alt="Freizeit" style="width:100%;">
+                      <img class="roundedges" src="./images/freizeit_7.jpg" alt="Freizeit" style="width:100%;">
                     </div>
                     <div class="item">
-                      <img class="roundedges" src="./images/freizeit_6.jpg" alt="Freizeit" style="width:100%;">
+                      <img class="roundedges" src="./images/freizeit_8.jpg" alt="Freizeit" style="width:100%;">
                     </div>
                   </div>
 
@@ -264,12 +266,13 @@
                     <li data-target="#business" data-slide-to="0" class="active"></li>
                     <li data-target="#business" data-slide-to="1"></li>
                     <li data-target="#business" data-slide-to="2"></li>
+                    <li data-target="#business" data-slide-to="3"></li>
                   </ol>
 
               <!-- Wrapper for slides -->
                   <div class="carousel-inner">
                       <div class="item active">
-                        <img class="roundedges" src="./images/business.jpg" alt="Business" style="width:100%;">
+                        <img class="roundedges" src="./images/business_3.jpg" alt="Business" style="width:100%;">
                       </div>
 
                       <div class="item">
@@ -278,6 +281,9 @@
 
                       <div class="item">
                         <img class="roundedges" src="./images/business_2.jpg" alt="Business" style="width:100%;">
+                      </div>
+                      <div class="item">
+                        <img class="roundedges" src="./images/business_4.jpg" alt="Business" style="width:100%;">
                       </div>
                   </div>
 
@@ -304,16 +310,12 @@
                     <li data-target="#outdoor" data-slide-to="0" class="active"></li>
                     <li data-target="#outdoor" data-slide-to="1"></li>
                     <li data-target="#outdoor" data-slide-to="2"></li>
-                    <li data-target="#outdoor" data-slide-to="3"></li>
                   </ol>
 
               <!-- Wrapper for slides -->
                   <div class="carousel-inner">
                       <div class="item active">
                         <img class="roundedges" src="./images/outdoor_1.jpg" alt="Outdoor" style="width:100%;">
-                      </div>
-                      <div class="item">
-                        <img class="roundedges" src="./images/outdoor_2.jpg" alt="Outdoor" style="width:100%;">
                       </div>
                     <div class="item">
                         <img class="roundedges" src="./images/outdoor_4.jpg" alt="Outdoor" style="width:100%;">
@@ -374,7 +376,7 @@
               </div>
           </div>
           <p class="w3-large w3-center w3-margin-top">Festlich</p>
-          <p class="w3-medium w3-center">Es sind die Details, die ein festliches Outfit von einem normalen Büroanzug unterscheiden. Die Stoffe sind edel und fließend, die Modelle geprägt durch elegante Ausstattung und bewusst gesetzte Akzente. Dabei dürfen Sie sich nicht verkleidet vorkommen. Denn nur wenn Sie Sie selbst bleiben, können Sie auf dem offiziellen Parkett glänzen. </p>
+          <p class="w3-medium w3-center">Es sind die Details, die ein festliches Outfit vom normalen Büroanzug unterscheiden. Stoffe sind edel und fließend, Modelle geprägt durch elegante Ausstattung und bewusst gesetzte Akzente. Dabei dürfen Sie sich nicht verkleidet vorkommen. Denn nur wenn Sie Sie selbst bleiben, können Sie auf dem offiziellen Parkett glänzen.  </p>
         </div>
         <div class="w3-col l3 m6 w3-margin-bottom">
           <div class="w3-image w3-round-large">
@@ -436,7 +438,7 @@
                       </div>
 
                       <div class="item">
-                        <img class="roundedges" src="./images/business.jpg" alt="Krawatten" style="width:100%;">
+                        <img class="roundedges" src="./images/accessoires_3.jpg" alt="Krawatten" style="width:100%;">
                       </div>
                   </div>
 
@@ -510,11 +512,11 @@
                       </div>
 
                       <div class="item">
-                        <img class="roundedges" src="./images/gutschein.jpg" alt="Gutschein" style="width:100%;">
+                        <img class="roundedges" src="./images/gutschein_2.jpg" alt="Gutschein" style="width:100%;">
                       </div>
 
                       <div class="item">
-                        <img class="roundedges" src="./images/business.jpg" alt="Gutschein" style="width:100%;">
+                        <img class="roundedges" src="./images/gutschein_3.jpg" alt="Gutschein" style="width:100%;">
                       </div>
                   </div>
 
@@ -530,22 +532,26 @@
               </div>
           </div>
           <p class="w3-large w3-center w3-margin-top">Gutscheine</p>
-          <p class="w3-medium w3-center">Natürlich dürfen auch Warengutscheine im Sortiment nicht fehlen. Diese gibt es als „10er“, „50er“ und „100er“, Sie können also in Zehnerschritten jede beliebige Summe verschenken. Gegen Vorkasse können wir unsere Gutscheine gerne auch direkt an Sie versenden, natürlich eingeschrieben und portofrei. </p>
+          <p class="w3-medium w3-center">Natürlich dürfen auch Warengutscheine in unserem Sortiment nicht fehlen. Ersparen Sie sich die Qual der Wahl, verschenken Sie doch Guthaben für aktuelle Mode und lassen Sie den Beschenkten sein neues Lieblingsteil selbst aussuchen. </p>
         </div>
       </div>
 
       <div class="container" style="padding:64px 8px">
         <h3 class="w3-center">UNSERE MARKEN</h3>
-        <p class="w3-center w3-large">Diese und viele weitere Marken finden Sie in unserem Herrenmoden Geschäft.</p>
+        <p class="w3-center w3-large">Diese und viele weitere Marken sind bei uns vertreten.</p>
         <section class="customer-logos slider">
           <div class="slide"><img src="./images\bugatti1.png"></div>
           <div class="slide"><img src="./images\carlgross1.png"></div>
-          <div class="slide"><img src="./images/cg.png"></div>
+          <div class="slide"><img src="./images/cg.jpg"></div>
           <div class="slide"><img src="./images/hajo.jpg"></div>
           <div class="slide"><img src="./images/fynchhatton.png"></div>
           <div class="slide"><img src="./images/isa.png"></div>
-          <div class="slide"><img src="./images/jploenes.png"></div>
+          <div class="slide"><img src="./images/mac.jpg"></div>
           <div class="slide"><img src="./images/seidensticker1.png"></div>
+          <div class="slide"><img src="./images/wrangler.jpg"></div>
+          <div class="slide"><img src="./images/happysocks.jpg"></div>
+          <div class="slide"><img src="./images/meyer.jpg"></div>
+          <div class="slide"><img src="./images/camel.jpg"></div>
         </section>
       </div>
       <div class="w3-container" style="margin-top:64px 8px">
@@ -566,10 +572,10 @@
             <img class="w3-image w3-round-large" src="./images/digischauf_4.jpg" alt="Digitales Schaufenster">
           </div>
           <div class="w3-col l2 m6 w3-margin-bottom">
-            <img class="w3-image w3-round-large" src="./images/digischauf_5.jpg" alt="Digitales Schaufenster">
+            <img class="w3-image w3-round-large" src="./images/digischauf_6.jpg" alt="Digitales Schaufenster">
           </div>
           <div class="w3-col l2 m6 w3-margin-bottom">
-            <img class="w3-image w3-round-large" src="./images/digischauf_6.jpg" alt="Digitales Schaufenster">
+            <img class="w3-image w3-round-large" src="./images/digischauf_5.jpg" alt="Digitales Schaufenster">
           </div>
         </div>
           <!-- Schaufenster small screen:    -->
@@ -602,10 +608,10 @@
                           <img class="roundedges" src="./images/digischauf_4.jpg" alt="Schaufenster" style="width:100%;">
                         </div>
                         <div class="item">
-                          <img class="roundedges" src="./images/digischauf_5.jpg" alt="Schaufenster" style="width:100%;">
+                          <img class="roundedges" src="./images/digischauf_6.jpg" alt="Schaufenster" style="width:100%;">
                         </div>
                         <div class="item">
-                          <img class="roundedges" src="./images/digischauf_6.jpg" alt="Schaufenster" style="width:100%;">
+                          <img class="roundedges" src="./images/digischauf_5.jpg" alt="Schaufenster" style="width:100%;">
                         </div>
                       </div>
 
@@ -630,11 +636,11 @@
     <!-- Geschäft Section -->
     <div class="w3-container w3-light-grey" style="padding:128px 16px" id="geschaeft">
       <h3 class="w3-center">UNSER GESCHÄFT</h3>
-      <p class="w3-center w3-large">In stilvoller Athmosphäre bieten wir Ihnen auf 100m² Verkaufsfläche die schönste Mode der Saison.</p>
+      <p class="w3-center w3-large">In angenehmer Athmosphäre bieten wir Ihnen auf 100m² Verkaufsfläche Mode für jede Gelegenheit.</p>
 
       <div class="w3-row-padding" style="margin-top:64px">
         <div class="w3-col l3 m6 w3-image w3-round-large w3-margin-bottom">
-          <img src="./images/innen_1.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity roundedges" alt="Sakkovielfalt.">
+          <img src="./images/innen_9.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity roundedges" alt="Sakkovielfalt.">
         </div>
         <div class="w3-col l3 m6 w3-image w3-round-large w3-margin-bottom">
           <img src="./images/innen_2.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity roundedges" alt="Eingangsbereich.">
@@ -643,7 +649,7 @@
           <img src="./images/innen_8.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity roundedges" alt="Sakkowand.">
         </div>
         <div class="w3-col l3 m6 w3-image w3-round-large w3-margin-bottom">
-          <img src="./images/innen_3.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity roundedges" alt="Krawatenensemble.">
+          <img src="./images/innen_3.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity roundedges" alt="Krawattenensemble.">
         </div>
       </div>
 
@@ -655,15 +661,15 @@
           <img src="./images/innen_6.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity roundedges" alt="Anzugecke.">
         </div>
         <div class="w3-col l3 m6 w3-image w3-round-large w3-margin-bottom">
-          <img src="./images/innen_7.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity roundedges" alt="Hosenregal.">
+          <img src="./images/innen_7.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity roundedges" alt="Jeanswand.">
         </div>
         <div class="w3-col l3 m6 w3-image w3-round-large w3-margin-bottom">
-          <img src="./images/innen_4.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity roundedges" alt="Kassabereich mit Hemdenwand.">
+          <img src="./images/innen_4.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity roundedges" alt="Kassabereich mit Hemdenregal.">
         </div>
       </div>
     </div>
 
-    <!-- Team Section -->
+    <!-- Team Section
     <div class="w3-container" style="padding:128px 16px" id="team">
       <h3 class="w3-center">UNSER TEAM</h3>
       <p class="w3-center w3-large">Wir beraten Sie gerne!</p>
@@ -698,59 +704,29 @@
             </div>
           </div>
         </div>
-        <!--<div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-card">
-        <img src="D://Geschaeft//website_neu//images/kopf.jpg" alt="Dan" style="width:100%">
-        <div class="w3-container">
-          <h3>Dan Star</h3>
-          <p class="w3-opacity">Designer</p>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum.</p>
-        </div>-->
       </div>
-    </div>
+    </div>-->
 
-    <!--ALT Geschichte Section "Statistics"
-    <div class="w3-container w3-row w3-center history-background" style="padding:128px 16px" id="geschichte">  deleted: w3-dark-grey, added history-background
-      <h3 class="w3-center">UNSERE GESCHICHTE</h3>
-      <p class="w3-center w3-large">... in 4 Zahlen. Wenn Sie mehr lesen möchten, klicken Sie hier.</p>
-      <div class="w3-quarter" style="margin-top:64px">
-        <img src="./images/geschichte_1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Gründung 1886.">
-        <span class="w3-xxlarge">1886</span>
-        <br><p class="w3-large">Gründung durch Großvater Johann Jellinek.</p>
-      </div>
-      <div class="w3-quarter" style="margin-top:64px">
-        <img src="./images/geschichte_2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Gründung 1886.">
-        <span class="w3-xxlarge">1930</span>
-        <br><p class="w3-large">Übersiedelung aus Neusiedlerstraße an heutigen Standort.</p>
-      </div>
-      <div class="w3-quarter" style="margin-top:64px">
-        <span class="w3-xxlarge">1978</span>
-        <br><p class="w3-large">Richard Jellinek übernimmt Geschäftsführung.</p>
-      </div>
-      <div class="w3-quarter" style="margin-top:64px">
-        <span class="w3-xxlarge">2010</span>
-        <br><p class="w3-large">Renovierung und Ausbau des Geschäftslokales.</p>
-      </div>
-    </div> -->
+
   <!-- Geschichte Section-->
   <div class="w3-container w3-row w3-center history-background" style="padding:128px 16px" id="geschichte">   <!-- deleted: w3-dark-grey, added history-background -->
     <h3 class="w3-center">UNSERE GESCHICHTE</h3>
-    <p class="w3-center w3-large">... in 4 Zahlen. Eine lange Zeit auf die wir stolz zurückblicken.</p>
+    <p class="w3-center w3-large">... in 4 Zahlen. Eine lange Zeit, auf die wir stolz zurückblicken.</p>
       <div class="w3-row-padding w3-center" style="margin-top:64px">
           <div class="w3-col l3 m6 w3-margin-bottom">
-              <img class="w3-image w3-round-large w3-hover-opacity" src="./images/geschichte_1.jpg"  onclick="onClick(this)" alt="1886">
+              <img class="w3-image w3-round-large w3-hover-opacity" src="./images/geschichte_0.jpg"  onclick="onClick(this)" alt="1886">
               <p class="w3-xlarge">1886</p>
-              <p class="w3-medium">Johann Jellinek eröffnet 1886 seine Herrenschneiderei in der Eisentorgasse x. Nach seinem Tod übernimmt Sohn Richard Johann den Betrieb, mit der Übersiedelung in die „kleine“ Neusiedlerstraße einige Jahre später wird das Angebot der Schneiderei kontinuierlich durch zusätzliche Konfektionsmode für Herren und Knaben erweitert.</p>
+              <p class="w3-medium">Johann Jellinek eröffnet 1886 seine Herrenschneiderei in der Eisentorgasse 12. Nach seinem Tod übernimmt Sohn Richard Johann den Betrieb. Mit der Übersiedelung in die „kleine“ Neusiedlerstraße einige Jahre später wird das Angebot der Schneiderei kontinuierlich durch zusätzliche Konfektionsmode für Herren und Knaben erweitert.</p>
           </div>
           <div class="w3-col l3 m6 w3-margin-bottom">
               <img class="w3-image w3-round-large w3-hover-opacity" src="./images/geschichte_2.jpg" onclick="onClick(this)" alt="1930">
               <p class="w3-xlarge">1930</p>
-              <p class="w3-medium">In den 1930er Jahren übersiedelt das Modegeschäft an seinen heutigen Standort in der Kaiserin Elisabethstraße, wo es sich weiter vergrößerte. Das Kindersegment wird aufgelassen und man konzentriert sich auf Herrenkonfektion. Circa 1960 wird das alte Holzportal dann durch eine dem Zeitgeist entsprechende metallverkleidete Auslage ersetzt.</p>
+              <p class="w3-medium">In den 1930er Jahren übersiedelt das Modegeschäft an seinen heutigen Standort in der Kaiserin Elisabethstraße 13, wo es sich weiter vergrößerte. Das Kindersegment wird aufgelassen und man konzentriert sich auf Herrenkonfektion. Circa 1960 wird das alte Holzportal dann durch eine dem Zeitgeist entsprechende metallverkleidete Auslage ersetzt.</p>
           </div>
           <div class="w3-col l3 m6 w3-margin-bottom">
               <img class="w3-image w3-round-large w3-hover-opacity" src="./images/geschichte_3.jpg"  onclick="onClick(this)" alt="1978">
               <p class="w3-xlarge">1978</p>
-              <p class="w3-medium">1978 verstirbt Richard Senior und seine Frau, Hedwig Jellinek, übernimmt den Betrieb gemeinsam mit Sohn Richard Junior als Geschäftsführer. Als wenige Jahre später auch das benachbarte Blumengeschäft frei wird, kann die Verkaufsfläche noch einmal deutlich erweitert werden. </p>
+              <p class="w3-medium">1978 verstirbt Richard Senior und seine Frau, Hedwig Jellinek, übernimmt den Betrieb gemeinsam mit Sohn Richard Junior als Geschäftsführer. Als wenige Jahre später die benachbarte Blumenhandlung zusperrt, kann das Geschäftslokal übernommen und so die Verkaufsfläche noch einmal erweitert werden. </p>
           </div>
           <div class="w3-col l3 m6 w3-margin-bottom">
               <img class="w3-image w3-round-large w3-hover-opacity" src="./images/geschichte_4.jpg"  onclick="onClick(this)" alt="2010">
@@ -878,7 +854,8 @@
               <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i></p>
             </td>
             <td style="text-align: left;" width="95%">
-              <a class="w3-medium" href="map:Kaiserin Elisabethstraße 13, 2340 Mödling">Kaiserin Elisabethstraße 13, 2340 Mödling</a>
+              <!--<a class="w3-medium" href="map:Kaiserin Elisabethstraße 13, 2340 Mödling">Kaiserin Elisabethstraße 13, 2340 Mödling</a>-->
+              <a class="w3-medium" target="_blank" href="https://www.google.de/maps/place/Herrenmode+Jellinek/@48.0843695,16.2808853,17z/data=!3m1!4b1!4m5!3m4!1s0x476daf0be7c36f3f:0xa662ddb11840aec4!8m2!3d48.0843659!4d16.283074">Kaiserin Elisabethstraße 13, 2340 Mödling</a>
             </td>
           </tr>
           <tr>
@@ -889,14 +866,14 @@
               <a class="w3-medium" href="tel:+43223647968">02236 47968</a>
             </td>
           </tr>
-          <tr>
+        <!--  <tr>
             <td style="text-align: left;">
               <p><i class="fa fa-mobile fa-fw w3-xxlarge w3-margin-right"></i></p>
             </td>
             <td style="text-align: left;">
               <a class="w3-medium" href="tel:+4367763824085">0677 63824085</a>
             </td>
-          </tr>
+          </tr>-->
           <tr>
             <td style="text-align: left;">
               <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i></p>
@@ -912,25 +889,34 @@
       <div class="w3-col l6 m6 margin-top-small-screen">
         <div id="googleMap" style="width:100%;height:268px;">
         </div>
-
         <script>
+          // Initialize and add the map
           function myMap() {
-            var mapProp = {
-              center: new google.maps.LatLng(48.084325169107466, 16.2830751882299),
-              zoom: 5,
-            };
-            var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+            // The location of Jellinek
+            const jellinek = { lat: 48.084374185174845, lng: 16.283075726369333 };
+            // The map, centered at Jellinek
+            const map = new google.maps.Map(document.getElementById("googleMap"), {
+              zoom: 15,
+              center: jellinek,
+            });
+            // The marker, positioned at Uluru
+            const marker = new google.maps.Marker({
+              position: jellinek,
+              map: map,
+            });
           }
+        </script>
+
         </script>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCIwnUyqwv71-OoHztKVTcC5-atRhiaOYI&callback=myMap">
         </script>
 
-        <!-- Image of location/map
+      <!--  Image of location/map
         <img src="/w3images/map.jpg" class="w3-image w3-greyscale" style="width:100%;margin-top:48px">-->
       </div>
-      <div class="w3-col l12 m12">
+      <div class="w3-col l12 m12 zeiten-desktop">
         <!--Öffnungszeiten-->
-        <p class="w3-big" style="text-align:center; padding-top:2rem;">Öffnungszeiten</p>
+        <p class="w3-big" style="text-align:center; padding-top:2rem;">Hallo</p>
         <hr class="dotted">
         <br>
         <div class="w3-center">
@@ -974,10 +960,10 @@
           </div>
         </div>
         <br>
-        <div class="w3-row-padding w3-center">
-          <div class="w3-col l4 m2 s0 w3-margin-bottom">
+      <!--<div class="w3-row-padding w3-center">
+         <div class="w3-col l4 m2 s0 w3-margin-bottom">
           </div>
-          <div class="w3-col l4 m8 s12 w3-margin-bottom">
+        <div class="w3-col l4 m8 s12 w3-margin-bottom">
             <center>
               <table>
                 <tr>
@@ -993,7 +979,20 @@
           </div>
           <div class="w3-col l4 m2 s0 w3-margin-bottom">
           </div>
-        </div>
+        </div>-->
+      </div>
+      <div class="zeiten-mobil" style="color:white">
+I
+      </div>
+      <div class="w3-center zeiten-mobil" style="padding-top:2rem;" id="oeffnungszeiten">
+        <p class="w3-big" style="text-align:center;">Öffnungszeiten</p>
+        <hr class="dotted">
+        <p class="w3-medium">Montag bis Freitag </p>
+        <p>8:00 bis 12:00</p>
+        <p>14:30 bis 18:00</p>
+        <br>
+        <p class="w3-medium"> Samstag </p>
+        <p>8:00 bis 12:30</p>
       </div>
     </div>
 

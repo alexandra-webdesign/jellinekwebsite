@@ -418,6 +418,13 @@ hr.dotted {
   white-space: nowrap;
 }
 
+.zeiten-mobil {
+  display:none!important;
+}
+
+.zeiten-desktop {
+  display:block;
+}
 
 @media only screen and (max-width: 896px) and (orientation: portrait){
   .header-small {
@@ -454,5 +461,13 @@ hr.dotted {
   }
   .home-button-on-large-device {
     display: none;
+  }
+
+
+  .zeiten-mobil {
+    display:block!important;
+  }
+  .zeiten-desktop {
+    display: none!important;
   }
 }
