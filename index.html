@@ -1,15 +1,28 @@
 <!DOCTYPE html>
-<!--sources used for this code:-->
+<!-- sources used for this code:-->
 <!-- Client Logo Slider from https://codepen.io/mdashikar/pen/VWPvgE -->
-<!--Simple Carousel from https://codepen.io/dangvanthanh/pen/AgHnB-->
-<!--and w3schools, link in website footer -->
+<!-- Bootstrap Carousel form https://www.w3schools.com/bootstrap/bootstrap_carousel.asp -->
+<!-- Icons by https://fontawesome.com/v4.7.0/icons/ -->
+<!-- Base Code w3schools, link in website footer -->
 
 
-<html>
-  <title>Herrenmode Jellinek</title>
+<html lang="de">
+  <title>Herrenmode Jellinek Mödling</title>
   <meta charset="UTF-8">
+  <meta name="description" content="Auf der Website von Herrenmode Jellinek finden Sie das aktuelle Sortiment. In unserem Geschäft in der Fußgängerzone Mödling finden sie eine große Auswahl an Anzügen, Hemden, Sakkos, Jeans, T-Shirts und Jacken. Bei uns bekommen Sie persönliche Beratung zur aktuellen Mode.">
+  <meta name="keywords" content="Herrenmode, Mödling, Jellinek, Jelinek, Seidensticker, Wrangler, Hugo Boss, Anzug, Hemd, Herrenmode Jellinek, Herrenmode Jelinek,">
+  <meta name="author" content="Herrenmode Jellinek">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- <base href="https://jakob-legende.at"> -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153216631-1">
+  </script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-153216631-1');
+  </script>
   <link rel="stylesheet" href="./css/w3.css">
   <link rel="stylesheet" href="./css/fonts.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -66,7 +79,7 @@
           <a href="#aktuelles" class="w3-bar-item w3-button"><i class="fa fa-bell iconclass"></i>AKTUELLES</a>
           <a href="#sortiment" class="w3-bar-item w3-button"><i class="fas fa-tshirt iconclass"></i>SORTIMENT</a>
           <a href="#geschaeft" class="w3-bar-item w3-button"><i class="fa fa-th iconclass"></i>GESCHÄFT</a>
-          <!--<a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user iconclass"></i>TEAM</a>-->
+          <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user iconclass"></i>TEAM</a>
           <a href="#geschichte" class="w3-bar-item w3-button"><i class="fa fa-align-center iconclass"></i>GESCHICHTE</a>
           <a href="#kontakt" class="w3-bar-item w3-button"><i class="fa fa-envelope iconclass"></i>KONTAKT</a>
         </div>
@@ -84,7 +97,7 @@
       <a href="#aktuelles" onclick="w3_close()" class="w3-bar-item w3-button">AKTUELLES</a>
       <a href="#sortiment" onclick="w3_close()" class="w3-bar-item w3-button">SORTIMENT</a>
       <a href="#geschaeft" onclick="w3_close()" class="w3-bar-item w3-button">GESCHÄFT</a>
-      <!--<a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>-->
+      <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
       <a href="#geschichte" onclick="w3_close()" class="w3-bar-item w3-button">GESCHICHTE</a>
       <a href="#kontakt" onclick="w3_close()" class="w3-bar-item w3-button">KONTAKT</a>
     </nav>
@@ -92,7 +105,7 @@
     <!-- Header with full-height image -->
     <header class="bgimg-1 w3-display-container w3-grayscale-minmin header-big" id="home">
       <div class="w3-display-bottommiddle w3-text-black">
-        <p><a href="#kontakt" class="w3-button w3-big w3-white roundedges w3-padding-xxlarge w3-margin-top w3-opacity w3-hover-opacity-off">Zu den Öffnungszeiten</a></p>
+        <p><a href="#oeffnungszeitendesktop" class="w3-button w3-big w3-white roundedges w3-padding-xxlarge w3-margin-top w3-opacity w3-hover-opacity-off">Zu den Öffnungszeiten</a></p>
       </div>
       <div class="w3-display-bottomleft w3-text-grey w3-big" style="padding:12px 24px">
         <a href="https://www.instagram.com/herrenmode_jellinek/" target="_blank"><i class="fa fa-instagram fa-2x w3-white roundedges w3-padding w3-opacity w3-hover-opacity w3-hover-text-grey w3-text-black"></i></a>
@@ -107,7 +120,7 @@
     <!-- Header for lower-width devices -->
     <header class="bgimg-2 w3-display-container w3-grayscale-minmin header-small" id="home-small-device">
       <div class="w3-display-bottommiddle w3-text-black">
-        <p><a href="#oeffnungszeiten" class="w3-button w3-big w3-white roundedges w3-padding-xxlarge w3-margin-top w3-opacity w3-hover-opacity-off">Zu den Öffnungszeiten.</a></p>
+        <p><a href="#oeffnungszeitenmobil" class="w3-button w3-big w3-white roundedges w3-padding-xxlarge w3-margin-top w3-opacity w3-hover-opacity-off">Zu den Öffnungszeiten.</a></p>
       </div>
       <!-- instagram icon
       <div class="w3-display-bottomleft w3-text-grey w3-big" style="padding:12px 24px">
@@ -175,18 +188,18 @@
 
 <!-- Aktuelles-->
     <div class="w3-container w3-light-grey" style="padding:128px 16px" id="aktuelles">
-      <h3 class="w3-center">AKTUELLES</h3>
+      <h1 class="w3-center" style="font-size:24px">AKTUELLES</h1>
       <p class="w3-center w3-large">Wir freuen uns, Sie wieder persönlich in unserem Geschäft begrüßen zu können.</p>
       <div class="w3-row-padding w3-center" style="margin-top:64px">
         <div class="w3-col m6 w3-margin-bottom box news-date-bottom-margin" style="padding: 0 3%">
 
           <!--<img class="w3-image w3-round-large" src="D://Geschaeft//website_neu//images/news2.png" alt="Business">-->
-          <p class="w3-big">Winterschlussverkauf</p>
+          <p class="w3-big">Frühlingserwachen</p>
           <hr class="dotted">
           </hr>
-          <p class="w3-large">Gehen Sie auf Schnäppchenjagd - viele Winterteile sind jetzt um 30-50% reduziert.</p>
+          <p class="w3-large">Zeit für Farbe. Zeit für leichtere Materialen. Die Mode der neuen Saison ist da! </p>
           <br>
-          <h7> Eintrag vom 03.03.2021 </h7>
+          <h7> Eintrag vom 22.03.2021 </h7>
         </div>
 
 
@@ -196,7 +209,7 @@
           <hr class="dotted">
           </hr>
           <p class="w3-large">Auf unserer neuen Website möchten wir Ihnen tiefere Einblicke in unser Unternehmen geben. Außerdem ist die Seite nun auch auf allen Geräten nutzbar - egal ob Smartphone, Tablet oder Laptop!</p>
-          <h7> Eintrag vom 03.03.2021 </h7>
+          <h7> Eintrag vom 22.03.2021 </h7>
         </div>
 
 
@@ -216,10 +229,10 @@
 
     <!-- Sortiment Section -->
     <div class="w3-container" style="padding:128px 16px" id="sortiment">
-      <h3 class="w3-center">UNSER SORTIMENT</h3>
+      <h1 class="w3-center" style="font-size:24px">UNSER SORTIMENT</h1>
       <p class="w3-center w3-large">Frühling 2021.</p>
-      <div  class="w3-row-padding w3-centerstyle" style="margin-top:64px">
-        <div class="w3-col l3 m6">
+      <div  class="w3-row-padding w3-centerstyle" style="margin-top:64px; display: flex; flex-wrap: wrap;">
+        <div class="w3-col l3 m6" style="height:95%; display: flex; flex-direction: column;">
             <div class="w3-image w3-round-large">
                 <div id="freizeit" class="carousel" data-interval="false">
                   <!-- Indicators -->
@@ -255,10 +268,10 @@
               </div>
           </div>
           <p class="w3-large w3-center w3-margin-top">Freizeit</p>
-          <p class="w3-medium w3-center">Der sportive Stadtnomade trägt Cargohosen zum Fieldjacket und peppt den Look mit kräftigen Farbtupfern in gelb, grün und orange auf. Denimteile in verschiedenen Waschungen und Vintage-optiken, sowohl bei Hosen wie auch bei Oberteilen, werden als „Key-Pieces“ kombiniert. </p>
+          <p class="w3-medium w3-center">Der sportive Stadtnomade trägt Cargohosen zum Fieldjacket und peppt den Look mit kräftigen Farbtupfern in gelb, grün und orange auf. Als Hingucker werden dazu Denimteile in verschiedenen Waschungen und Vintage-optiken kombiniert. </p>
         </div>
 
-        <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-col l3 m6 w3-margin-bottom" style="height:95%; display: flex; flex-direction: column;">
           <div class="w3-image w3-round-large">
               <div id="business" class="carousel" data-interval="false">
               <!-- Indicators -->
@@ -299,10 +312,10 @@
               </div>
           </div>
           <p class="w3-large w3-center w3-margin-top">Business</p>
-          <p class="w3-medium w3-center">Die moderne Businessmode ist smart und sportiv, sie zeigt sich offen für die Einflüsse der Sportswear. Nicht der klassische Anzug, sondern flexible, „broken“ Looks dominieren, die sowohl im Arbeitsalltag als auch in der Freizeit tragbar sind. </p>
+          <p class="w3-medium w3-center">Die moderne Businessmode ist smart und sportiv, sie zeigt sich offen für die Einflüsse der Sportswear. Nicht der klassische Anzug, sondern flexible, „aufgebrochene“ kombinationen dominieren, die sowohl im Arbeitsalltag als auch in der Freizeit tragbar sind. </p>
         </div>
 
-        <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-col l3 m6 w3-margin-bottom" style="height:95%; display: flex; flex-direction: column;">
           <div class="w3-image w3-round-large">
               <div id="outdoor" class="carousel" data-interval="false">
               <!-- Indicators -->
@@ -337,9 +350,9 @@
               </div>
           </div>
           <p class="w3-large w3-center w3-margin-top">Outdoor</p>
-          <p class="w3-medium w3-center">Im Sommer verschwimmen die Grenzen zwischen Outdoor und Freizeit. Es zieht uns nach Draußen, Natürlichkeit ist der Spirit. Safarithemen und Hemdjacken aus Leinen, Baumwolle und ganz aktuell auch aus Hanf vermitteln Reiselust und Abenteuer. </p>
+          <p class="w3-medium w3-center">Im Sommer verschwimmen die Grenzen zwischen Outdoor und Freizeit. Es zieht uns nach draußen, Natürlichkeit ist der Spirit. Safarithemen und Hemdjacken aus Leinen, Baumwolle und ganz aktuell auch aus Hanf vermitteln Reiselust und Abenteuer. </p>
         </div>
-        <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-col l3 m6 w3-margin-bottom" style="height:95%; display: flex; flex-direction: column;">
           <div class="w3-image w3-round-large">
               <div id="festlich" class="carousel" data-interval="false">
               <!-- Indicators -->
@@ -378,7 +391,7 @@
           <p class="w3-large w3-center w3-margin-top">Festlich</p>
           <p class="w3-medium w3-center">Es sind die Details, die ein festliches Outfit vom normalen Büroanzug unterscheiden. Stoffe sind edel und fließend, Modelle geprägt durch elegante Ausstattung und bewusst gesetzte Akzente. Dabei dürfen Sie sich nicht verkleidet vorkommen. Denn nur wenn Sie Sie selbst bleiben, können Sie auf dem offiziellen Parkett glänzen.  </p>
         </div>
-        <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-col l3 m6 w3-margin-bottom" style="height:95%; display: flex; flex-direction: column;">
           <div class="w3-image w3-round-large">
               <div id="waesche" class="carousel" data-interval="false">
               <!-- Indicators -->
@@ -417,7 +430,7 @@
           <p class="w3-large w3-center w3-margin-top">Wäsche</p>
           <p class="w3-medium w3-center">Soft ist das neue Sexy. Gute Wäsche soll man nicht spüren, weshalb Wohlfühlfaktor und Nachhaltigkeit wichtigste Elemente sind, feine Jerseys, weiche Baumwolle und elastische Materialmischungen dominieren. Die sommerliche Nachtmode präsentiert sich bunt und luftig. </p>
         </div>
-        <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-col l3 m6 w3-margin-bottom" style="height:95%; display: flex; flex-direction: column;">
           <div class="w3-image w3-round-large">
               <div id="accessoires" class="carousel" data-interval="false">
               <!-- Indicators -->
@@ -456,7 +469,7 @@
           <p class="w3-large w3-center w3-margin-top">Accessoires</p>
           <p class="w3-medium w3-center">Stecktuch und/oder trendiger Manschettenknopf haben die klassische Krawatte überholt. Witzige, bunte Socken gelten als Statement und lockern auf. Ein zum Schuh passender Gürtel mit schöner Schnalle komplettiert das perfekte Gesamtbild. </p>
         </div>
-        <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-col l3 m6 w3-margin-bottom" style="height:95%; display: flex; flex-direction: column;">
           <div class="w3-image w3-round-large">
               <div id="Loungewear" class="carousel" data-interval="false">
               <!-- Indicators -->
@@ -495,7 +508,7 @@
           <p class="w3-large w3-center w3-margin-top">Loungewear</p>
           <p class="w3-medium w3-center">Die Loungewear hat sich durch Corona vom reinen „Hausgwand“ wegentwickelt, hin zu durchaus alltagsgeeigneter Universalbekleidung. Bequemlichkeit und Tragekomfort stehen im Mittelpunkt, zumindest die Oberteile bleiben dabei aber jederzeit kameratauglich.  </p>
         </div>
-        <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-col l3 m6 w3-margin-bottom" style="height:95%; display: flex; flex-direction: column;">
           <div class="w3-image w3-round-large">
               <div id="gutscheine" class="carousel" data-interval="false">
               <!-- Indicators -->
@@ -537,7 +550,7 @@
       </div>
 
       <div class="container" style="padding:64px 8px">
-        <h3 class="w3-center">UNSERE MARKEN</h3>
+        <h1 class="w3-center" style="font-size:24px">UNSERE MARKEN</h1>
         <p class="w3-center w3-large">Diese und viele weitere Marken sind bei uns vertreten.</p>
         <section class="customer-logos slider">
           <div class="slide"><img src="./images\bugatti1.png"></div>
@@ -555,7 +568,7 @@
         </section>
       </div>
       <div class="w3-container" style="margin-top:64px 8px">
-        <h3 class="w3-center">UNSER DIGITALES SCHAUFENSTER</h3>
+        <h1 class="w3-center" style="font-size:24px">UNSER DIGITALES SCHAUFENSTER</h1>
         <p class="w3-center w3-large">Stöbern Sie durch aktuelle Bilder unseres Sortiments und entdecken Sie die Mode der Saison.</p>
           <!-- Schaufenster large screen:    -->
         <div class="w3-row-padding w3-center schaufenster-large-screen" style="margin-top:64px">
@@ -578,6 +591,26 @@
             <img class="w3-image w3-round-large" src="./images/digischauf_5.jpg" alt="Digitales Schaufenster">
           </div>
         </div>
+        <div class="w3-row-padding w3-center schaufenster-large-screen" style="margin-top:64px">
+          <div class="w3-col l2 m6 w3-margin-bottom">
+            <img class="w3-image w3-round-large" src="./images/digischauf_7.jpg" alt="Digitales Schaufenster">
+          </div>
+          <div class="w3-col l2 m6 w3-margin-bottom">
+            <img class="w3-image w3-round-large" src="./images/digischauf_10.jpg" alt="Digitales Schaufenster">
+          </div>
+          <div class="w3-col l2 m6 w3-margin-bottom">
+            <img class="w3-image w3-round-large" src="./images/digischauf_8.jpg" alt="Digitales Schaufenster">
+          </div>
+          <div class="w3-col l2 m6 w3-margin-bottom">
+            <img class="w3-image w3-round-large" src="./images/digischauf_9.jpg" alt="Digitales Schaufenster">
+          </div>
+          <div class="w3-col l2 m6 w3-margin-bottom">
+            <img class="w3-image w3-round-large" src="./images/digischauf_12.jpg" alt="Digitales Schaufenster">
+          </div>
+          <div class="w3-col l2 m6 w3-margin-bottom">
+            <img class="w3-image w3-round-large" src="./images/digischauf_11.jpg" alt="Digitales Schaufenster">
+          </div>
+        </div>
           <!-- Schaufenster small screen:    -->
           <div class="w3-image w3-round-large schaufenster-small-screen">
                     <div id="schaufenster" class="carousel" data-interval="false">
@@ -589,6 +622,12 @@
                         <li data-target="#schaufenster" data-slide-to="3"></li>
                         <li data-target="#schaufenster" data-slide-to="4"></li>
                         <li data-target="#schaufenster" data-slide-to="5"></li>
+                        <li data-target="#schaufenster" data-slide-to="6"></li>
+                        <li data-target="#schaufenster" data-slide-to="7"></li>
+                        <li data-target="#schaufenster" data-slide-to="8"></li>
+                        <li data-target="#schaufenster" data-slide-to="9"></li>
+                        <li data-target="#schaufenster" data-slide-to="10"></li>
+                        <li data-target="#schaufenster" data-slide-to="11"></li>
                       </ol>
 
                       <!-- Wrapper for slides -->
@@ -608,10 +647,28 @@
                           <img class="roundedges" src="./images/digischauf_4.jpg" alt="Schaufenster" style="width:100%;">
                         </div>
                         <div class="item">
-                          <img class="roundedges" src="./images/digischauf_6.jpg" alt="Schaufenster" style="width:100%;">
+                          <img class="roundedges" src="./images/digischauf_12.jpg" alt="Schaufenster" style="width:100%;">
                         </div>
                         <div class="item">
                           <img class="roundedges" src="./images/digischauf_5.jpg" alt="Schaufenster" style="width:100%;">
+                        </div>
+                        <div class="item">
+                          <img class="roundedges" src="./images/digischauf_7.jpg" alt="Schaufenster" style="width:100%;">
+                        </div>
+                        <div class="item">
+                          <img class="roundedges" src="./images/digischauf_10.jpg" alt="Schaufenster" style="width:100%;">
+                        </div>
+                        <div class="item">
+                          <img class="roundedges" src="./images/digischauf_8.jpg" alt="Schaufenster" style="width:100%;">
+                        </div>
+                        <div class="item">
+                          <img class="roundedges" src="./images/digischauf_9.jpg" alt="Schaufenster" style="width:100%;">
+                        </div>
+                        <div class="item">
+                          <img class="roundedges" src="./images/digischauf_6.jpg" alt="Schaufenster" style="width:100%;">
+                        </div>
+                        <div class="item">
+                          <img class="roundedges" src="./images/digischauf_11.jpg" alt="Schaufenster" style="width:100%;">
                         </div>
                       </div>
 
@@ -635,8 +692,8 @@
 
     <!-- Geschäft Section -->
     <div class="w3-container w3-light-grey" style="padding:128px 16px" id="geschaeft">
-      <h3 class="w3-center">UNSER GESCHÄFT</h3>
-      <p class="w3-center w3-large">In angenehmer Athmosphäre bieten wir Ihnen auf 100m² Verkaufsfläche Mode für jede Gelegenheit.</p>
+      <h1 class="w3-center" style="font-size:24px">UNSER GESCHÄFT</h1>
+      <p class="w3-center w3-large">In angenehmer Atmosphäre bieten wir Ihnen auf 100m² Verkaufsfläche Mode für jede Gelegenheit.</p>
 
       <div class="w3-row-padding" style="margin-top:64px">
         <div class="w3-col l3 m6 w3-image w3-round-large w3-margin-bottom">
@@ -669,48 +726,42 @@
       </div>
     </div>
 
-    <!-- Team Section
+    <!-- Team Section -->
     <div class="w3-container" style="padding:128px 16px" id="team">
-      <h3 class="w3-center">UNSER TEAM</h3>
-      <p class="w3-center w3-large">Wir beraten Sie gerne!</p>
+      <h1 class="w3-center" style="font-size:24px">UNSER TEAM</h1>
+      <p class="w3-center w3-large">Seit Generationen liegen uns unsere Kunden am Herzen. Am Schönsten ist es, wenn wir gemeisam das Passende finden.</p>
       <div class="w3-row-padding w3-grayscale-minmin" style="margin-top:64px">
-        <div class="w3-col l4 m6 w3-margin-bottom">
+        <div class="w3-col l1 m0 s0 w3-margin-bottom">
+        </div>
+        <div class="w3-col l5 m6 s12 w3-margin-bottom">
           <div class="w3-card">
-            <img src="./images/alex.jpg" alt="John" style="width:100%">
+            <img src="./images/richard.jpg" alt="John" style="width:100%">
             <div class="w3-container">
               <h3>Richard Jellinek</h3>
-              <p class="w3-opacity-min">Geschäftsführer</p>
-              <p class="w3-medium">"Mode ist toll blabla Leidenschaft für Design und Trends."</p>
+              <p style="font-size:15px" class="w3-opacity-min">Geschäftsführer</p>
+              <!--<p class="w3-medium">"Mode ist toll blabla Leidenschaft für Design und Trends."</p>-->
             </div>
           </div>
         </div>
-        <div class="w3-col l4 m6 w3-margin-bottom">
+        <div class="w3-col l5 m6 s12 w3-margin-bottom">
           <div class="w3-card">
-            <img src="./images/alex.jpg" alt="Jane" style="width:100%">
+            <img src="./images/birgitt.jpg" alt="Jane" style="width:100%">
             <div class="w3-container">
               <h3>Birgitt Jellinek</h3>
-              <p class="w3-opacity-min">Geschäftsführerin</p>
-              <p class="w3-medium">"Blabal bladkfjs dfashdfwoerjlskd sdhfksdjf sliefhensld."</p>
+              <p style="font-size:15px" class="w3-opacity-min">Geschäftsführerin</p>
+              <!--<p class="w3-medium">"Blabal bladkfjs dfashdfwoerjlskd sdhfksdjf sliefhensld."</p>-->
             </div>
           </div>
         </div>
-        <div class="w3-col l4 m6 w3-margin-bottom">
-          <div class="w3-card">
-            <img src="./images/alex.jpg" alt="Mike" style="width:100%">
-            <div class="w3-container">
-              <h3>Lukas</h3>
-              <p class="w3-opacity-min">Lehrling</p>
-              <p class="w3-medium">Lehrling zum Handelskaufmann</p>
-            </div>
-          </div>
+        <div class="w3-col l1 m0 s0 w3-margin-bottom">
         </div>
       </div>
-    </div>-->
+    </div>
 
 
   <!-- Geschichte Section-->
   <div class="w3-container w3-row w3-center history-background" style="padding:128px 16px" id="geschichte">   <!-- deleted: w3-dark-grey, added history-background -->
-    <h3 class="w3-center">UNSERE GESCHICHTE</h3>
+    <h1 class="w3-center" style="font-size:24px">UNSERE GESCHICHTE</h1>
     <p class="w3-center w3-large">... in 4 Zahlen. Eine lange Zeit, auf die wir stolz zurückblicken.</p>
       <div class="w3-row-padding w3-center" style="margin-top:64px">
           <div class="w3-col l3 m6 w3-margin-bottom">
@@ -721,7 +772,7 @@
           <div class="w3-col l3 m6 w3-margin-bottom">
               <img class="w3-image w3-round-large w3-hover-opacity" src="./images/geschichte_2.jpg" onclick="onClick(this)" alt="1930">
               <p class="w3-xlarge">1930</p>
-              <p class="w3-medium">In den 1930er Jahren übersiedelt das Modegeschäft an seinen heutigen Standort in der Kaiserin Elisabethstraße 13, wo es sich weiter vergrößerte. Das Kindersegment wird aufgelassen und man konzentriert sich auf Herrenkonfektion. Circa 1960 wird das alte Holzportal dann durch eine dem Zeitgeist entsprechende metallverkleidete Auslage ersetzt.</p>
+              <p class="w3-medium">In den 1930er Jahren übersiedelt das Modegeschäft an seinen heutigen Standort in der Kaiserin Elisabethstraße 13, wo es sich weiter vergrößert. Das Kindersegment wird aufgelassen und man konzentriert sich auf Herrenkonfektion. Circa 1960 wird das alte Holzportal dann durch eine dem Zeitgeist entsprechende metallverkleidete Auslage ersetzt.</p>
           </div>
           <div class="w3-col l3 m6 w3-margin-bottom">
               <img class="w3-image w3-round-large w3-hover-opacity" src="./images/geschichte_3.jpg"  onclick="onClick(this)" alt="1978">
@@ -833,7 +884,7 @@
 <!-- Contact Section -->
     <div class="w3-container" style="padding:128px 16px" id="kontakt">
       <!--Das Padding funkt iwie nicht -->
-      <h3 class="w3-center">KONTAKT</h3>
+      <h1 class="w3-center" style="font-size:24px">KONTAKT</h1>
       <p class="w3-center w3-large" style="margin-bottom: 4rem;">Kommen Sie vorbei. Rufen Sie uns an. Oder schreiben Sie uns eine E-Mail. Wir freuen uns auf Sie! </p>
       <div class="w3-col l6 m6">
         <!--Adresse-->
@@ -854,7 +905,6 @@
               <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i></p>
             </td>
             <td style="text-align: left;" width="95%">
-              <!--<a class="w3-medium" href="map:Kaiserin Elisabethstraße 13, 2340 Mödling">Kaiserin Elisabethstraße 13, 2340 Mödling</a>-->
               <a class="w3-medium" target="_blank" href="https://www.google.de/maps/place/Herrenmode+Jellinek/@48.0843695,16.2808853,17z/data=!3m1!4b1!4m5!3m4!1s0x476daf0be7c36f3f:0xa662ddb11840aec4!8m2!3d48.0843659!4d16.283074">Kaiserin Elisabethstraße 13, 2340 Mödling</a>
             </td>
           </tr>
@@ -916,7 +966,7 @@
       </div>
       <div class="w3-col l12 m12 zeiten-desktop">
         <!--Öffnungszeiten-->
-        <p class="w3-big" style="text-align:center; padding-top:2rem;">Hallo</p>
+        <p class="w3-big" style="text-align:center; padding-top:2rem;" id="oeffnungszeitendesktop">Öffnungszeiten</p>
         <hr class="dotted">
         <br>
         <div class="w3-center">
@@ -984,7 +1034,7 @@
       <div class="zeiten-mobil" style="color:white">
 I
       </div>
-      <div class="w3-center zeiten-mobil" style="padding-top:2rem;" id="oeffnungszeiten">
+      <div class="w3-center zeiten-mobil" style="padding-top:2rem;" id="oeffnungszeitenmobil">
         <p class="w3-big" style="text-align:center;">Öffnungszeiten</p>
         <hr class="dotted">
         <p class="w3-medium">Montag bis Freitag </p>
@@ -1008,7 +1058,7 @@ I
     <i class="fa fa-twitter w3-hover-opacity"></i>
     <i class="fa fa-linkedin w3-hover-opacity"></i>-->
       </div>
-      <p>Website von Webolution und <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-grey w3-text-white">w3.css</a></p>
+      <p>Website von Alex*Webdesign und <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-grey w3-text-white">w3.css</a></p>
        <a href="impressum.html" class="w3-hover-text-grey w3-text-white"> Impresssum</a>
     </footer>
 
